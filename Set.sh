@@ -39,7 +39,7 @@ echo "[tg]
 "sa_path = "\"$SA_PATH\"
 
 run_args = $RUN_ARGS
-" >> conf.toml.example
+" >> conf.toml
 echo "[$RCLONE_RMT]
 type = drive
 scope = drive
