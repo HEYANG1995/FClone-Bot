@@ -48,7 +48,7 @@ scope = drive
 "team_drive = $FOLDER_ID"
 " >> rclone.conf
 cd ..
-wget --no-check-certificate -q $SA_ZIP_URL -O accounts.zip
-unzip -qq accounts.zip -d /app/iCopy/
+curl -L $SA_ZIP_URL -o accounts.zip
+unzip -jq accounts.zip -d /app/iCopy/accounts/
 chmod 777 Bot.py
 python3 Bot.py
