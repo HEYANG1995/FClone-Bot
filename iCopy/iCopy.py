@@ -34,7 +34,7 @@ from workflow import (
 from multiprocessing import Process as _mp, Manager
 from threading import Thread
 from utils.load import ns
-from web import dash
+#from web import dash
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
@@ -175,8 +175,8 @@ if __name__ == "__main__":
     ns.x = 0
     progress = _mp(target=_payload.task_buffer, args=(ns,))
     progress.start()
-    if load.cfg['web']['dashboard']:
-        web = _mp(target=dash.dashboard)
-        web.start()
+    #if load.cfg['web']['dashboard']:
+        #web = _mp(target=dash.dashboard)
+        #web.start()
 
     main()
