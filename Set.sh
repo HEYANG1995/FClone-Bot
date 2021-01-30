@@ -43,6 +43,9 @@ run_args = $RUN_ARGS
 echo "[$RCLONE_RMT]
 type = drive
 scope = drive
+"client_id: = $CLIENT_ID"
+"client_secret: = $CLIENT_SECRET"
+"refresh_token: = $REFRESH_TOKEN"
 "service_account_file = /app/iCopy/accounts/$SA_INIT_FILE"
 "service_account_file_path = $SA_PATH"
 "team_drive = $FOLDER_ID"
@@ -50,5 +53,5 @@ scope = drive
 cd ..
 curl -L $SA_ZIP_URL -o accounts.zip
 unzip -jq accounts.zip -d /app/iCopy/accounts/
-chmod 777 Bot.py
-python3 Bot.py
+chmod 777 iCopy.py
+python3 iCopy.py

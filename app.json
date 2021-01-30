@@ -34,7 +34,7 @@
 		},
 		"LANGUAGE": {
 			"description": "English by Default Support cn and jp",
-			"value": "eng"
+			"value": "cn"
 		},
 		"CLONER": {
 			"description": "Dont Change this",
@@ -80,6 +80,12 @@
 		"SA_PATH": {
 			"description": "Dont Change",
 			"value": "/app/iCopy/accounts"
+		},
+		"CLIENT_ID": {
+		},
+		"CLIENT_SECRET": {
+		},
+		"REFRESH_TOKEN": {
 		}
 	},
 	"buildpacks": [
