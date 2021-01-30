@@ -1,0 +1,3 @@
+[submodule "iCopy"]
+	path = iCopy
+	url = https://github.com/fxxkrlab/iCopy.git
